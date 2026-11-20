@@ -4,11 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Máy tính ký gửi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
     <h1>Máy tính ký gửi</h1>
-    <p>Trang đang dựng. Job đầu tiên của đội coder sẽ làm form ở đây.</p>
+    <p class="sub">Chia tiền đơn hàng: nhãn hàng 75%, cửa hàng 25%.</p>
+    <label for="amount">Số tiền đơn hàng (đồng)</label>
+    <input id="amount" type="text" inputmode="numeric" autocomplete="off" placeholder="Ví dụ: 400000">
+    <p id="hint" class="hint" role="alert" hidden></p>
+    <dl id="result" class="result" hidden>
+      <div><dt id="brand">Nhãn hàng nhận: </dt></div>
+      <div><dt id="store">Cửa hàng giữ: </dt></div>
+    </dl>
   </main>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
