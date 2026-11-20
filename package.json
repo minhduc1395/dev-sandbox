@@ -5,6 +5,6 @@
   "type": "module",
   "description": "Dự án thử của đội coder: máy tính chia tiền hàng ký gửi",
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test"
   }
 }
