@@ -4,7 +4,10 @@
 Trang tĩnh để người dùng nhập số tiền và xem kết quả chia.
 
 ## Thư mục và file chính
-- `public/index.html`: trang duy nhất. Script ES module nhúng trong trang hoặc `public/app.js`.
+- `public/index.html`: trang duy nhất, form nhập số tiền.
+- `public/app.js`: ES module, gọi `splitConsignment` từ `../src/calc/split.js`, hiện kết quả khi gõ, nhắc lỗi tiếng Việt.
+- `public/style.css`: giao diện, dùng được ở 360px.
+- Chạy: phục vụ thư mục gốc repo (`python3 -m http.server`) rồi mở `/public/`; mở thẳng file:// có thể bị chặn import module.
 
 ## Dữ liệu vào/ra
 - Gọi hàm của module calc qua `import` từ `../src/calc/*.js` (không chép lại logic tính).
@@ -15,3 +18,4 @@ Trang tĩnh để người dùng nhập số tiền và xem kết quả chia.
 
 ## Lịch sử ngắn
 - 2026-11-20 Trang giữ chỗ.
+- 2026-11-20 Form chia tiền 75/25 (job #2): app.js, style.css; ô nhập chấp nhận 400000 hoặc 400.000.
