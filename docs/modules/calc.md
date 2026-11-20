@@ -5,6 +5,7 @@ Các hàm tính tiền thuần (không giao diện) cho máy tính ký gửi.
 
 ## Thư mục và file chính
 - `src/calc/split.js`: `splitConsignment(amount, brandShare = 0.75)` trả `{brand, store}`, làm tròn đến đồng, tổng hai phần luôn bằng số gốc.
+- `src/calc/promo.js`: `storeMargin(listPrice, discountPct, brandShare = 0.75)` trả `{salePrice, brand, store}`; giá bán = giá niêm yết × (1 − giảm/100) làm tròn đến đồng, chia tiền qua `splitConsignment`. `discountPct` ngoài 0–100 hoặc giá âm thì ném `RangeError`.
 - `test/*.test.js`: test bằng `node:test`.
 
 ## Dữ liệu vào/ra
@@ -19,3 +20,4 @@ Các hàm tính tiền thuần (không giao diện) cho máy tính ký gửi.
 
 ## Lịch sử ngắn
 - 2026-11-20 Khởi tạo splitConsignment.
+- 2026-11-20 Thêm storeMargin (promo.js).
