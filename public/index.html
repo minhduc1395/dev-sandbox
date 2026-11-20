@@ -9,7 +9,12 @@
 <body>
   <main>
     <h1>Máy tính ký gửi</h1>
-    <p class="sub">Chia tiền đơn hàng: nhãn hàng 75%, cửa hàng 25%.</p>
+    <p class="sub">Chia tiền đơn hàng: chọn tỷ lệ nhãn hàng, phần còn lại thuộc cửa hàng.</p>
+    <label for="share">Tỷ lệ nhãn hàng</label>
+    <select id="share">
+      <option value="75" selected>75%</option>
+      <option value="70">70%</option>
+    </select>
     <label for="amount">Số tiền đơn hàng (đồng)</label>
     <input id="amount" type="text" inputmode="numeric" autocomplete="off" placeholder="Ví dụ: 400000">
     <p id="hint" class="hint" role="alert" hidden></p>

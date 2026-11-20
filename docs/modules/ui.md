@@ -19,3 +19,4 @@ Trang tĩnh để người dùng nhập số tiền và xem kết quả chia.
 ## Lịch sử ngắn
 - 2026-11-20 Trang giữ chỗ.
 - 2026-11-20 Form chia tiền 75/25 (job #2): app.js, style.css; ô nhập chấp nhận 400000 hoặc 400.000.
+- 2026-11-20 Ô chọn tỷ lệ nhãn 75/70 và hiện % ở mỗi dòng (job #6); gọi `splitConsignment(amount, pct/100)`.
